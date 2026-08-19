@@ -1,0 +1,11 @@
+section {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_m8SBItLY7N2JxaLroxgs0yiualwM6n8pPahr-Ql9A&s=10") center/cover;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}

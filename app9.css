@@ -1,0 +1,31 @@
+h1 {
+    width: 300px;
+    height: 100px;
+    margin: 10px auto;
+    padding: auto;
+    background-color: paleturquoise;
+}
+
+h1:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+
+h1:nth-of-type(2) {
+    transform: scale(2, 0.5);
+}
+
+h1:nth-of-type(3) {
+    transform: translate(100px, 200px);
+}
+
+h1:nth-of-type(4) {
+    transform: skew(30dedg, 45deg);
+}
+
+h1:nth-of-type(5) {
+    transform: rotate(45deg);
+    transform: scale(2, 0.5);
+    transform: translate(100px, 200px);
+    transform: skew(30deg, 45deg);
+}

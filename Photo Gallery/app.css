@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 799;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-left: calc(10%/6);
+    border-bottom: solid 2px #f1f1f1;
+}
