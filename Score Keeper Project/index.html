@@ -15,7 +15,7 @@
             <h2>Ping Pong Score Keeper</h2>
         </header>
         <section>
-            <h1>0 to 0</h1>
+            <h1><span id="p1Head">0</span> to <span id="p2Head">0</span></h1>
             <p>Use the button below to keep score</p>
             <label for="play-upto">Playing to</label>
             <select name="score_max" id="play-upto">
@@ -23,9 +23,9 @@
                 <option value="11">11</option>
                 <option value="21">21</option>
             </select>
-            <div><button>+1 Player One</button>
-                <button>+1 Player Two</button>
-                <button>Reset</button>
+            <div><button id="p1Scored">+1 Player One</button>
+                <button id="p2Scored">+1 Player Two</button>
+                <button id="reset">Reset</button>
             </div>
         </section>
     </main>
