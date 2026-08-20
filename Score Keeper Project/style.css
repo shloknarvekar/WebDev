@@ -128,3 +128,19 @@ button:nth-child(3) {
     background-color: #ef4444;
     color: white;
 }
+
+.winner {
+    color: #10b981;
+}
+
+.loser {
+    color: #ef4444;
+}
+
+.btn-disabled {
+    background-color: #9ca3af !important;
+    color: #e5e7eb;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
