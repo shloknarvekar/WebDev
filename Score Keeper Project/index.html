@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <figure><img src="./lisa-keffer-3B8nIiT-Pmc-unsplash.jpg" alt="Picture of 2 ping pong rackets!"></figure>
+        <header>
+            <h2>Ping Pong Score Keeper</h2>
+        </header>
+        <section>
+            <h1><span id="p1Head">0</span> to <span id="p2Head">0</span></h1>
+            <p>Use the button below to keep score</p>
+            <label for="play-upto">Playing to</label>
+            <select name="score_max" id="play-upto">
+                <option value="7">7</option>
+                <option value="11">11</option>
+                <option value="21">21</option>
+            </select>
+            <div><button id="p1Scored">+1 Player One</button>
+                <button id="p2Scored">+1 Player Two</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
