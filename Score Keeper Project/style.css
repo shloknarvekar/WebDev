@@ -52,13 +52,13 @@ figure img {
     display: block;
 }
 
-header h2 {
+header h1 {
     font-size: 1.75rem;
     font-weight: 700;
     color: #1f2937;
 }
 
-section h1 {
+section p.score {
     font-size: 3.75rem;
     font-weight: 800;
     color: #111827;
@@ -69,6 +69,12 @@ section p {
     font-size: 1.1rem;
     color: #6b7280;
     margin-bottom: 16px;
+}
+
+section p.rule-note {
+    font-size: 0.95rem;
+    margin-top: -12px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -86,6 +92,12 @@ select {
     background-color: #ffffff;
     cursor: pointer;
     margin-bottom: 24px;
+}
+
+select:focus-visible,
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
 }
 
 section div {
@@ -106,11 +118,11 @@ button {
     transition: opacity 0.2s ease, transform 0.1s ease;
 }
 
-button:active {
+button:active:not(:disabled) {
     transform: scale(0.97);
 }
 
-button:hover {
+button:hover:not(:disabled) {
     opacity: 0.9;
 }
 
@@ -137,10 +149,9 @@ button:nth-child(3) {
     color: #ef4444;
 }
 
-.btn-disabled {
-    background-color: #9ca3af !important;
+button:disabled {
+    background-color: #9ca3af;
     color: #e5e7eb;
     cursor: not-allowed;
     opacity: 0.6;
-    pointer-events: none;
 }

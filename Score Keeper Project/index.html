@@ -12,20 +12,22 @@
     <main>
         <figure><img src="./lisa-keffer-3B8nIiT-Pmc-unsplash.jpg" alt="Picture of 2 ping pong rackets!"></figure>
         <header>
-            <h2>Ping Pong Score Keeper</h2>
+            <h1>Ping Pong Score Keeper</h1>
         </header>
         <section>
-            <h1><span id="p1Head">0</span> to <span id="p2Head">0</span></h1>
-            <p>Use the button below to keep score</p>
+            <p class="score" aria-live="polite"><span id="p1Head">0</span> to <span id="p2Head">0</span></p>
+            <p>Use the buttons below to keep score</p>
             <label for="play-upto">Playing to</label>
             <select name="score_max" id="play-upto">
                 <option value="7">7</option>
                 <option value="11">11</option>
                 <option value="21">21</option>
             </select>
-            <div><button id="p1Scored">+1 Player One</button>
-                <button id="p2Scored">+1 Player Two</button>
-                <button id="reset">Reset</button>
+            <p class="rule-note">Must win by 2 points</p>
+            <div>
+                <button type="button" id="p1Scored">+1 Player One</button>
+                <button type="button" id="p2Scored">+1 Player Two</button>
+                <button type="button" id="reset">Reset</button>
             </div>
         </section>
     </main>
