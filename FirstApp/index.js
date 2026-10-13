@@ -16,10 +16,15 @@ app.get('/cats', (req, res) => {
 app.get('/dogs', (req, res) => {
     res.send("woof!");
 })
+app.get('/search', (req, res) => {
+    console.log(req.query);
+    res.send('Hi!');
+})
 app.get('/{*path}', (req, res, next) => {
     res.send("IDK that route");
 
 })
+
 app.listen(3000, () => {
     console.log("Listening on port 3000!");
 })
